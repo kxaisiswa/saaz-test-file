@@ -14,7 +14,7 @@
 	<main class="container">
         <div><!--image--></div>
         <div class="form-signin">
-            <input type="button" value="Student" class="inactive" onclick="window.location.href='Student_login.jsp'"><input type="button" value="Staff">
+            <input type="button" value="Student" class="inactive" onclick="window.location.href='index.jsp'"><input type="button" value="Staff">
             <form action="LoginServlet" method="post">
                 <h1 class="h3 mb-3 fw-bolder p-3">Sign in</h1>				
 				<c:if test="${session_status != null}">
