@@ -96,23 +96,23 @@
 					</c:if>
                     <div class="col-6">
                         <label class="form-label">ID Kelas</label>
-                        <input type="text" class="form-control" name="classid" placeholder="" value="" required>
+                        <input type="text" class="form-control" name="classid" required>
                         <div class="invalid-feedback">
                             Sila isi ID kelas dengan betul.
                         </div>
                     </div>
                     <div class="col-6">
                         <label class="form-label">Nama Kelas</label>
-                        <input type="text" class="form-control" name="classname" placeholder="" value="" required>
+                        <input type="text" class="form-control" name="classname" required>
                         <div class="invalid-feedback">
                             Sila isi nama kelas dengan betul.
                         </div>
                     </div>
                     <div class="col-6">
                         <label class="form-label">Kapasiti Kelas</label>
-                        <input type="number" class="form-control" name="classcapacity" placeholder="" value="" required>
+                        <input type="number" class="form-control" name="classcapacity" min="10" max="40" required>
                         <div class="invalid-feedback">
-                            Sila isi kapasiti kelas dengan betul.
+                            Sila isi kapasiti kelas antara 10 hingga 40.
                         </div>
                     </div>
                     <div class="col-6">

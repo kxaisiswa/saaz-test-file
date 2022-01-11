@@ -91,13 +91,13 @@
                     </div>
                     <div class="col-6">
                         <label class="form-label">Kata Laluan</label>
-                        <input type="text" class="form-control" name="adminpassword" value="<c:out value="${admininfo.adminpassword}" />" required>
+                        <input type="text" class="form-control" name="adminpassword" value="<c:out value="${admininfo.adminpassword}" />" maxLength="8" required>
                         <div class="invalid-feedback">
                             Sila isi kata laluan dengan betul.
                         </div>
                     </div>
                     <div class="col-6">
-                        <label class="form-label">ID Penyelia</label>
+                        <label class="form-label">Penyelia</label>
                         <select class="form-select" name="superviseid" required>
 							<option value="0"></option>
 							<c:forEach items="${superviselist}" var="sl">
@@ -117,7 +117,7 @@
                     </div>
                     <div class="col-4">
                         <label class="form-label">No. Telefon</label>
-                        <input type="text" class="form-control" name="adminphonenum" value="<c:out value="${admininfo.adminphonenum}" />" required>
+                        <input type="text" class="form-control" name="adminphonenum" value="<c:out value="${admininfo.adminphonenum}" />" maxLength="12" required>
                         <div class="invalid-feedback">
                             Sila isi no. telefon dengan betul.
                         </div>

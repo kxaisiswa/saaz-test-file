@@ -108,14 +108,14 @@
 					</c:if>
                     <div class="col-6">
                         <label class="form-label">No. Matrik</label>
-                        <input type="text" class="form-control" name="studid" id="studid" required>
+                        <input type="text" class="form-control" name="studid" id="studid" maxLength="7" required>
                         <div class="invalid-feedback">
                             Sila isi no. matrik dengan betul.
                         </div>
                     </div>
                     <div class="col-6">
                         <label class="form-label">No. Kad Pengenalan</label>
-                        <input type="text" class="form-control" name="studic" required>
+                        <input type="text" class="form-control" name="studic" maxLength="12" required>
                         <div class="invalid-feedback">
                             Sila isi no. kad pengenalan dengan betul.
                         </div>
@@ -148,7 +148,7 @@
                     </div>
                     <div class="col-6">
                         <label class="form-label">Kata Laluan</label>
-                        <input type="text" class="form-control" name="studpassword" id="studpassword" required>
+                        <input type="text" class="form-control" name="studpassword" id="studpassword" maxLength="12" required>
                         <div class="invalid-feedback">
                             Sila isi kata laluan dengan betul.
                         </div>

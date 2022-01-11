@@ -242,7 +242,6 @@ public class StudentDAO {
 			ResultSet rs = ps.executeQuery();
 			
 			while(rs.next()) {
-				System.out.println(rs.getString("CLASSID") + rs.getInt("STUDID"));
 				Student studentacademicinfo = new Student();
 				
 				if(rs.getString("CLASSID") == null) {
@@ -473,8 +472,6 @@ public class StudentDAO {
 				currentcap = rs.getInt("COUNT");
 				classcap = rs.getInt("CLASSCAPACITY");
 			}
-			System.out.println("current cap " + currentcap);
-			System.out.println("class cap " + classcap);
 			
 			if(currentcap < classcap) {
 				ps = connect.prepareStatement("UPDATE STUDENT SET CLASSID = ?, ENROLLDATE = ? WHERE STUDID = ?");

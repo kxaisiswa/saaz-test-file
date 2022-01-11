@@ -93,21 +93,21 @@
 					</c:if>
                     <div class="col-6">
                         <label class="form-label">ID Staf</label>
-                        <input type="text" class="form-control" name="adminid" placeholder="" value="" required>
+                        <input type="text" class="form-control" name="adminid" maxLength="5" required>
                         <div class="invalid-feedback">
                             Sila isi ID staff dengan betul.
                         </div>
                     </div>
                     <div class="col-6">
                         <label class="form-label">Kata Laluan</label>
-                        <input type="text" class="form-control" name="adminpassword" placeholder="" value="" required>
+                        <input type="text" class="form-control" name="adminpassword" maxLength="8" required>
                         <div class="invalid-feedback">
                             Sila isi kata laluan dengan betul.
                         </div>
                     </div>
                     <div class="col-6">
                         <label class="form-label">Nama</label>
-                        <input type="text" class="form-control" name="adminname" placeholder="" value="" required>
+                        <input type="text" class="form-control" name="adminname" required>
                         <div class="invalid-feedback">
                             Sila isi nama staf dengan betul.
                         </div>

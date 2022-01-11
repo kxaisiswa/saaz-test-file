@@ -37,7 +37,6 @@ public class ParentDAO {
 			ResultSet rs = ps.executeQuery();
 			
 			if(rs.next()) {
-				System.out.print("update");
 				ps = connect.prepareStatement("UPDATE PARENT SET PARENTNAME=?, PARENTNATIONALITY=?, PARENTRACE=?, PARENTRELIGION=?, PARENTPHONENUM=?, PARENTNUMDEPENDENT=?, PARENTJOB=?, PARENTTAXNUMBER=?, PARENTINCOME=?, PARENTRELATION=? WHERE PARENTIC=?");
 				ps.setString(1, parentname);
 				ps.setString(2, parentnationality);

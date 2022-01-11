@@ -96,23 +96,23 @@
 					</c:if>
                     <div class="col-3">
                         <label class="form-label">Kod Subjek</label>
-                        <input type="text" class="form-control" name="subjcode" placeholder="" value="" required>
+                        <input type="text" class="form-control" name="subjcode" maxLength="5" required>
                         <div class="invalid-feedback">
                             Sila isi kod subjek dengan betul.
                         </div>
                     </div>
                     <div class="col-6">
                         <label class="form-label">Nama Subjek</label>
-                        <input type="text" class="form-control" name="subjname" placeholder="" value="" required>
+                        <input type="text" class="form-control" name="subjname" required>
                         <div class="invalid-feedback">
                             Sila isi nama subjek dengan betul.
                         </div>
                     </div>
                     <div class="col-3">
                         <label class="form-label">Jam Kredit</label>
-                        <input type="number" class="form-control" name="subjcredit" placeholder="" value="" required>
+                        <input type="number" class="form-control" name="subjcredit" min="1" max="4" required>
                         <div class="invalid-feedback">
-                            Sila isi jam kredit dengan betul.
+                            Sila isi jam kredit antara 1 hingga 4.
                         </div>
                     </div>
                     <div class="col-12">
