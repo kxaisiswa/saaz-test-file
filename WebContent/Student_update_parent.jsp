@@ -82,14 +82,14 @@
                     </div>
                     <div class="col-6">
                         <label class="form-label">No. Kad Pengenalan</label>
-                        <input type="text" class="form-control" name="parentic" placeholder="" value="<c:out value="${studentinfo.parent.parentic}" />" required>
+                        <input type="text" class="form-control" name="parentic" placeholder="" value="<c:out value="${studentinfo.parent.parentic}" />" maxLength="12" required>
                         <div class="invalid-feedback">
                             Sila isi no. kad pengenalan dengan betul.
                         </div>
                     </div>
                     <div class="col-6">
                         <label class="form-label">No. Telefon</label>
-                        <input type="text" class="form-control" name="parentphonenum" placeholder="" value="<c:out value="${studentinfo.parent.parentphonenum}" />" required>
+                        <input type="text" class="form-control" name="parentphonenum" placeholder="" value="<c:out value="${studentinfo.parent.parentphonenum}" />" maxLength="12" required>
                         <div class="invalid-feedback">
                             Sila isi no. telefon dengan betul.
                         </div>
@@ -145,7 +145,7 @@
                     </div>
                     <div class="col-6">
                         <label for="lastName" class="form-label">Bil. Tanggungan</label>
-                        <input type="number" class="form-control" name="parentnumdependent" placeholder="" value="<c:out value="${studentinfo.parent.parentnumdependent}" />" required>
+                        <input type="number" class="form-control" name="parentnumdependent" placeholder="" value="<c:out value="${studentinfo.parent.parentnumdependent}" />" min="0" max="20" required>
                         <div class="invalid-feedback">
                             Sila isi bil. tanggungan dengan betul.
                         </div>

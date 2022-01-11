@@ -166,7 +166,7 @@
                     </div>
                     <div class="col-6">
                         <label class="form-label">No. Kad Pengenalan</label>
-                        <input type="text" class="form-control" name="studic" placeholder="" value="<c:out value="${studentinfo.studic}" />" required>
+                        <input type="text" class="form-control" name="studic" placeholder="" value="<c:out value="${studentinfo.studic}" />" maxLength="12" required>
                         <div class="invalid-feedback">
                             Sila isi no. kad pengenalan dengan betul.
                         </div>
@@ -247,7 +247,7 @@
                     </div>
                     <div class="col-4">
                         <label class="form-label">No. Sijil Lahir</label>
-                        <input type="text" class="form-control" name="studbirthcertnum" placeholder="" value="<c:out value="${studentinfo.studbirthcertnum}" />" required>
+                        <input type="text" class="form-control" name="studbirthcertnum" placeholder="" value="<c:out value="${studentinfo.studbirthcertnum}" />" maxLength="10" required>
                         <div class="invalid-feedback">
                             Sila isi no. sijil lahir dengan betul.
                         </div>
@@ -261,7 +261,7 @@
                     </div>
                     <div class="col-6">
                         <label class="form-label">No. Telefon</label>
-                        <input type="text" class="form-control" name="studphonenum" placeholder="" value="<c:out value="${studentinfo.studphonenum}" />" required>
+                        <input type="text" class="form-control" name="studphonenum" placeholder="" value="<c:out value="${studentinfo.studphonenum}" />" maxLength="12" required>
                         <div class="invalid-feedback">
                             Sila isi no. telefon dengan betul.
                         </div>

@@ -88,7 +88,7 @@
                     </div>
                     <div class="col-6">
                         <label class="form-label">Kata Laluan</label>
-                        <input type="text" class="form-control" name="studpassword" placeholder="" value="<c:out value="${studentinfo.studpassword}" />" required>
+                        <input type="text" class="form-control" name="studpassword" placeholder="" value="<c:out value="${studentinfo.studpassword}" />" maxLength="12" required>
                         <div class="invalid-feedback">
                             Sila isi kata laluan dengan betul.
                         </div>
