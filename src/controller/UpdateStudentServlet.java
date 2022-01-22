@@ -55,6 +55,7 @@ public class UpdateStudentServlet extends HttpServlet {
 			System.out.println("File uploaded");
 			String foldername = "resources";
 			String uploadpath = request.getServletContext().getRealPath("") + foldername;
+			System.out.println(uploadpath);
 			File directory = new File(uploadpath);
 			if(!directory.exists()) {
 				directory.mkdirs();

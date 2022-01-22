@@ -237,7 +237,7 @@
                     <div class="col-6"></div>
                     <div class="col-4"></div>
                     <div class="col-4 my-4 text-center">
-                    	<c:if test = "${studentinfo.studdocpath != null}">
+                    	<c:if test = "${studentinfo.studdocpath != null && studentinfo.studdocpath.length() != 0}">
 							<input class="btn btn-secondary" type="button" value="Download" onclick="window.location.href='DownloadFileServlet?filename=<c:out value="${studentinfo.studdocpath}" />'"/>
 						</c:if>
                     </div>
